@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="4D6-qd-1wD">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="mplus-1mn-regular.ttf">
+            <string>mplus-1mn-regular</string>
+            <string>mplus-1mn-regular</string>
+            <string>mplus-1mn-regular</string>
+        </mutableArray>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="zrN-Zw-tlb">
+            <objects>
+                <viewController id="4D6-qd-1wD" customClass="ViewController" customModule="accountsTittleQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="nOO-Kq-mOj"/>
+                        <viewControllerLayoutGuide type="bottom" id="pIL-NI-VUi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nKt-lf-7Eb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wNP-Lg-hBO">
+                                <rect key="frame" x="78" y="188" width="164" height="104"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="26"/>
+                                <state key="normal" title="START"/>
+                                <connections>
+                                    <segue destination="We3-1o-N7v" kind="modal" identifier="toQuiz" id="tYk-og-iw4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="startButton" destination="wNP-Lg-hBO" id="YDK-as-h5N"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5zJ-c3-wbG" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-197" y="286"/>
+        </scene>
+        <!--Quiz View Controller-->
+        <scene sceneID="Sdn-jb-K7f">
+            <objects>
+                <viewController id="We3-1o-N7v" customClass="QuizViewController" customModule="accountsTittleQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hla-HL-3en"/>
+                        <viewControllerLayoutGuide type="bottom" id="900-Uq-e7u"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Vxd-R5-4ui">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="pJg-ub-Il9">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K2e-z6-4d5" customClass="MaterialButton" customModule="accountsTittleQuiz" customModuleProvider="target">
+                                        <rect key="frame" x="42" y="149" width="65" height="132"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="choiceAnswer:" destination="We3-1o-N7v" eventType="touchUpInside" id="mC8-Kp-UgD"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0IO-BI-6LN" customClass="MaterialButton" customModule="accountsTittleQuiz" customModuleProvider="target">
+                                        <rect key="frame" x="110" y="234" width="65" height="26"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="choiceAnswer:" destination="We3-1o-N7v" eventType="touchUpInside" id="bDW-ia-tdS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dcE-fV-Zoh" customClass="MaterialButton" customModule="accountsTittleQuiz" customModuleProvider="target">
+                                        <rect key="frame" x="144" y="346" width="65" height="111"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="choiceAnswer:" destination="We3-1o-N7v" eventType="touchUpInside" id="1Px-0c-hLX"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deh-MZ-JuS" customClass="MaterialButton" customModule="accountsTittleQuiz" customModuleProvider="target">
+                                        <rect key="frame" x="213" y="325" width="65" height="132"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="choiceAnswer:" destination="We3-1o-N7v" eventType="touchUpInside" id="WAJ-Yl-bze"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HkW-Pd-wJH" customClass="MaterialButton" customModule="accountsTittleQuiz" customModuleProvider="target">
+                                        <rect key="frame" x="110" y="263" width="65" height="18"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="choiceAnswer:" destination="We3-1o-N7v" eventType="touchUpInside" id="tiA-fw-6cO"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ORI-GP-Fdz" customClass="MaterialButton" customModule="accountsTittleQuiz" customModuleProvider="target">
+                                        <rect key="frame" x="144" y="325" width="65" height="18"/>
+                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="choiceAnswer:" destination="We3-1o-N7v" eventType="touchUpInside" id="Iob-Yf-7Je"/>
+                                        </connections>
+                                    </button>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kokuban.png" translatesAutoresizingMaskIntoConstraints="NO" id="jfx-aR-avd">
+                                        <rect key="frame" x="66" y="22" width="191" height="71"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background3.5.png" translatesAutoresizingMaskIntoConstraints="NO" id="p5x-5U-W5i">
+                                        <rect key="frame" x="0.0" y="0.0" width="322" height="483"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4tn-uH-nMG" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
+                                        <rect key="frame" x="90" y="47" width="142" height="21"/>
+                                        <fontDescription key="fontDescription" name="mplus-1mn-regular" family="M+ 1mn" pointSize="19"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ghw-jT-Bdv" customClass="MaterialButton" customModule="accountsTittleQuiz" customModuleProvider="target">
+                                        <rect key="frame" x="110" y="149" width="65" height="81"/>
+                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <action selector="choiceAnswer:" destination="We3-1o-N7v" eventType="touchUpInside" id="OAF-Dx-FV3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="choice1" destination="K2e-z6-4d5" id="4cm-XD-8SI"/>
+                        <outlet property="choice2" destination="Ghw-jT-Bdv" id="huU-Oi-9TG"/>
+                        <outlet property="choice3" destination="0IO-BI-6LN" id="qPj-NG-xbj"/>
+                        <outlet property="choice4" destination="dcE-fV-Zoh" id="Hm3-rX-c0n"/>
+                        <outlet property="choice5" destination="deh-MZ-JuS" id="UIS-Zw-g2g"/>
+                        <outlet property="choice6" destination="HkW-Pd-wJH" id="pqb-zf-Ise"/>
+                        <outlet property="choice7" destination="ORI-GP-Fdz" id="hyq-8Q-AP7"/>
+                        <outlet property="label" destination="4tn-uH-nMG" id="Uhx-ps-Dq4"/>
+                        <outlet property="test" destination="pJg-ub-Il9" id="tx7-Xr-HkH"/>
+                        <segue destination="7h5-ze-3jI" kind="modal" identifier="toResult" id="STs-r3-BNk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RGv-UC-NXd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="211.19999999999999" y="286.83999999999997"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="Eev-56-Xqf">
+            <objects>
+                <viewController id="7h5-ze-3jI" customClass="ResultViewController" customModule="accountsTittleQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="KuL-kc-Zea"/>
+                        <viewControllerLayoutGuide type="bottom" id="R0R-Gh-0kj"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="pmh-lP-XRf">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="EeU-4Q-gQy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oy1-aA-QTy">
+                                        <rect key="frame" x="56" y="372" width="50" height="50"/>
+                                        <state key="normal" backgroundImage="facebook-4-xxl.png"/>
+                                        <connections>
+                                            <action selector="postFacebook:" destination="7h5-ze-3jI" eventType="touchUpInside" id="gtu-uu-sBB"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAi-V0-ERO">
+                                        <rect key="frame" x="230" y="372" width="50" height="50"/>
+                                        <state key="normal" backgroundImage="twitter-4-xxl.png"/>
+                                        <connections>
+                                            <action selector="postTwitter:" destination="7h5-ze-3jI" eventType="touchUpInside" id="z5z-4L-idE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N0u-yf-uMo">
+                                        <rect key="frame" x="144" y="372" width="50" height="50"/>
+                                        <state key="normal" backgroundImage="home-5-xxl.png"/>
+                                        <connections>
+                                            <action selector="toHome:" destination="7h5-ze-3jI" eventType="touchUpInside" id="Wkm-wb-xpn"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8VC-0r-ijF">
+                                        <rect key="frame" x="49" y="196" width="240" height="21"/>
+                                        <fontDescription key="fontDescription" name="mplus-1mn-regular" family="M+ 1mn" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taX-W9-2vV">
+                                        <rect key="frame" x="95" y="96" width="151" height="21"/>
+                                        <fontDescription key="fontDescription" name="mplus-1mn-regular" family="M+ 1mn" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="answerLabel" destination="8VC-0r-ijF" id="4Tw-EI-gOO"/>
+                        <outlet property="pointLabel" destination="taX-W9-2vV" id="cAV-PM-vWo"/>
+                        <outlet property="test" destination="EeU-4Q-gQy" id="NYR-DC-5kX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ojb-xe-ss1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="588" y="275"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="background3.5.png" width="640" height="960"/>
+        <image name="facebook-4-xxl.png" width="256" height="256"/>
+        <image name="home-5-xxl.png" width="256" height="256"/>
+        <image name="kokuban.png" width="735" height="525"/>
+        <image name="twitter-4-xxl.png" width="256" height="256"/>
+    </resources>
+</document>
