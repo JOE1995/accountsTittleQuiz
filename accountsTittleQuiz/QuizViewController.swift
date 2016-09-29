@@ -45,14 +45,14 @@ class QuizViewController: UIViewController {
         
         
         //test.backgroundColor = UIColor.cloudsColor()
-        choice1.backgroundColor = UIColor.peterRiverColor()
-        choice2.backgroundColor = UIColor.emeraldColor()
-        choice3.backgroundColor = UIColor.amethystColor()
-        choice4.backgroundColor = UIColor.sunflowerColor()
-        choice5.backgroundColor = UIColor.belizeHoleColor()
-        choice6.backgroundColor = UIColor.pumpkinColor()
-        choice7.backgroundColor = UIColor.pumpkinColor()
-        
+//        choice1.backgroundColor = UIColor.whiteColor()
+//        choice2.backgroundColor = UIColor.whiteColor()
+//        choice3.backgroundColor = UIColor.whiteColor()
+//        choice4.backgroundColor = UIColor.whiteColor()
+//        choice5.backgroundColor = UIColor.whiteColor()
+//        choice6.backgroundColor = UIColor.whiteColor()
+//        choice7.backgroundColor = UIColor.whiteColor()
+     
 
         // Do any additional setup after loading the view.
         

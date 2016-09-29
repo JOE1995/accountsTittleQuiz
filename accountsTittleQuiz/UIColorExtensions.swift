@@ -10,7 +10,20 @@ extension UIColor {
     convenience init(r: Int, g:Int , b:Int) {
         self.init(red: CGFloat(r)/255, green: CGFloat(g)/255, blue: CGFloat(b)/255, alpha: 1.0)
     }
+    
+    class func hoge()->UIColor {
+        return UIColor(r: 59, g: 59, b: 60)
+    }
+    
+    class func hogehoge()->UIColor {
+        return UIColor(r: 81, g: 82, b: 84)
+    }
 
+    //yellow
+    class func hogehogehoge()->UIColor {
+        return UIColor(r: 172, g: 152, b: 32)
+    }
+    
     class func turquoiseColor()->UIColor {
         return UIColor(r: 26, g: 188, b: 156)
     }

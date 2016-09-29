@@ -13,9 +13,6 @@
             <string>mplus-1mn-regular</string>
             <string>mplus-1mn-regular</string>
             <string>mplus-1mn-regular</string>
-            <string>mplus-1mn-regular</string>
-            <string>mplus-1mn-regular</string>
-            <string>mplus-1mn-regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
@@ -84,67 +81,21 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="username" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OVb-8g-1Qu">
-                                <rect key="frame" x="57" y="38" width="206" height="22"/>
-                                <fontDescription key="fontDescription" name="mplus-1mn-regular" family="M+ 1mn" pointSize="18"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ランキング" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sJa-5Y-RHn">
-                                <rect key="frame" x="91" y="68" width="139" height="33"/>
-                                <fontDescription key="fontDescription" name="mplus-1mn-regular" family="M+ 1mn" pointSize="25"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Sc3-xQ-l2C">
-                                <rect key="frame" x="36" y="118" width="248" height="366"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="rankingTableCell" id="5Gg-RY-aId">
-                                        <rect key="frame" x="0.0" y="28" width="248" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5Gg-RY-aId" id="Mj9-Im-CVW">
-                                            <rect key="frame" x="0.0" y="0.0" width="248" height="43"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="no data" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QkU-oj-rq5">
-                                                    <rect key="frame" x="72" y="11" width="97" height="21"/>
-                                                    <fontDescription key="fontDescription" name="mplus-1mn-regular" family="M+ 1mn" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fuq-TJ-dJe">
-                                                    <rect key="frame" x="173" y="11" width="53" height="21"/>
-                                                    <fontDescription key="fontDescription" name="mplus-1mn-regular" family="M+ 1mn" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ranking" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CSp-pA-2kL">
-                                                    <rect key="frame" x="13" y="11" width="52" height="21"/>
-                                                    <fontDescription key="fontDescription" name="mplus-1mn-regular" family="M+ 1mn" pointSize="17"/>
-                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </prototypes>
-                            </tableView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ViewController.png" translatesAutoresizingMaskIntoConstraints="NO" id="kZ4-Rz-eSH">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="u3M-2U-7fp">
-                                <rect key="frame" x="123" y="492" width="75" height="68"/>
+                                <rect key="frame" x="0.0" y="240" width="320" height="80"/>
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="26"/>
-                                <state key="normal" title="Start"/>
+                                <state key="normal" title=" "/>
                                 <connections>
-                                    <segue destination="15Q-HO-vym" kind="modal" id="Kzm-lY-znd"/>
+                                    <segue destination="15Q-HO-vym" kind="modal" modalTransitionStyle="crossDissolve" id="Kzm-lY-znd"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="label" destination="OVb-8g-1Qu" id="x5f-9e-9Yf"/>
-                        <outlet property="rankingTableView" destination="Sc3-xQ-l2C" id="Kz2-VE-u2q"/>
-                    </connections>
+                    <navigationItem key="navigationItem" id="hMB-iJ-qaY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CsO-1L-xsk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -165,82 +116,56 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oXd-k3-tKx">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="QuizViewController.png" translatesAutoresizingMaskIntoConstraints="NO" id="aSB-F4-Idl">
+                                        <rect key="frame" x="-1" y="0.0" width="322" height="568"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfG-0L-44j" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
+                                        <rect key="frame" x="89" y="269" width="142" height="21"/>
+                                        <fontDescription key="fontDescription" name="mplus-1mn-regular" family="M+ 1mn" pointSize="19"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CSI-qq-12X" customClass="MaterialButton" customModule="accountsTittleQuiz" customModuleProvider="target">
-                                        <rect key="frame" x="42" y="147" width="77" height="160"/>
-                                        <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="3" y="57" width="153" height="176"/>
                                         <connections>
                                             <action selector="choiceAnswer:" destination="15Q-HO-vym" eventType="touchUpInside" id="wCV-dq-gCm"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UXG-tW-9HC" customClass="MaterialButton" customModule="accountsTittleQuiz" customModuleProvider="target">
-                                        <rect key="frame" x="122" y="147" width="77" height="98"/>
-                                        <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="163" y="57" width="153" height="71"/>
                                         <connections>
                                             <action selector="choiceAnswer:" destination="15Q-HO-vym" eventType="touchUpInside" id="d8F-Sj-UXV"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fqA-G0-bbo" customClass="MaterialButton" customModule="accountsTittleQuiz" customModuleProvider="target">
-                                        <rect key="frame" x="122" y="249" width="77" height="32"/>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="163" y="139" width="153" height="45"/>
                                         <connections>
                                             <action selector="choiceAnswer:" destination="15Q-HO-vym" eventType="touchUpInside" id="PGq-lM-u5W"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="5" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="knE-ZD-DTa" customClass="MaterialButton" customModule="accountsTittleQuiz" customModuleProvider="target">
-                                        <rect key="frame" x="122" y="411" width="77" height="132"/>
-                                        <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="3" y="444" width="153" height="102"/>
                                         <connections>
                                             <action selector="choiceAnswer:" destination="15Q-HO-vym" eventType="touchUpInside" id="adK-Nc-e6c"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7Z-hs-Vfe" customClass="MaterialButton" customModule="accountsTittleQuiz" customModuleProvider="target">
-                                        <rect key="frame" x="204" y="385" width="77" height="159"/>
-                                        <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
-                                        <connections>
-                                            <action selector="choiceAnswer:" destination="15Q-HO-vym" eventType="touchUpInside" id="SO8-bn-uD2"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" tag="6" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YKB-nA-Hhg" customClass="MaterialButton" customModule="accountsTittleQuiz" customModuleProvider="target">
-                                        <rect key="frame" x="122" y="283" width="77" height="24"/>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="163" y="191" width="153" height="45"/>
                                         <connections>
                                             <action selector="choiceAnswer:" destination="15Q-HO-vym" eventType="touchUpInside" id="kMK-ST-HaY"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" tag="7" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="luc-HN-Qc4" customClass="MaterialButton" customModule="accountsTittleQuiz" customModuleProvider="target">
-                                        <rect key="frame" x="122" y="385" width="77" height="22"/>
-                                        <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="0.5" colorSpace="calibratedRGB"/>
+                                        <rect key="frame" x="3" y="369" width="153" height="70"/>
                                         <connections>
                                             <action selector="choiceAnswer:" destination="15Q-HO-vym" eventType="touchUpInside" id="YVR-6c-t86"/>
                                         </connections>
                                     </button>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="background.png" translatesAutoresizingMaskIntoConstraints="NO" id="FmG-Yv-R9E">
-                                        <rect key="frame" x="0.0" y="0.0" width="322" height="573"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kokuban.png" translatesAutoresizingMaskIntoConstraints="NO" id="fCy-vW-EEN">
-                                        <rect key="frame" x="66" y="22" width="191" height="71"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VfG-0L-44j" customClass="LTMorphingLabel" customModule="LTMorphingLabel">
-                                        <rect key="frame" x="90" y="47" width="142" height="21"/>
-                                        <fontDescription key="fontDescription" name="mplus-1mn-regular" family="M+ 1mn" pointSize="19"/>
-                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="teacher_man.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nj2-VV-dzK">
-                                        <rect key="frame" x="207" y="76" width="102" height="128"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="YUKA2.png" translatesAutoresizingMaskIntoConstraints="NO" id="gEu-lo-f5M">
-                                        <rect key="frame" x="0.0" y="378" width="128" height="173"/>
-                                    </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="comment1.png" translatesAutoresizingMaskIntoConstraints="NO" id="w9d-lW-DmO">
-                                        <rect key="frame" x="-18" y="293" width="214" height="114"/>
-                                    </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="どこに入るのかな?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kd4-iM-fIJ">
-                                        <rect key="frame" x="38" y="333" width="115" height="21"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n7Z-hs-Vfe" customClass="MaterialButton" customModule="accountsTittleQuiz" customModuleProvider="target">
+                                        <rect key="frame" x="164" y="370" width="152" height="177"/>
+                                        <connections>
+                                            <action selector="choiceAnswer:" destination="15Q-HO-vym" eventType="touchUpInside" id="SO8-bn-uD2"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
@@ -280,43 +205,74 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GHD-OB-LkY">
                                 <rect key="frame" x="1" y="2" width="319" height="566"/>
                                 <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="YUKA3.png" translatesAutoresizingMaskIntoConstraints="NO" id="SXA-fL-5Kc">
-                                        <rect key="frame" x="78" y="374" width="297" height="188"/>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ResultViewController.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZH6-YR-Yz1">
+                                        <rect key="frame" x="0.0" y="0.0" width="319" height="569"/>
                                     </imageView>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="point.png" translatesAutoresizingMaskIntoConstraints="NO" id="ddO-6R-bFi">
-                                        <rect key="frame" x="-136" y="89" width="580" height="310"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQX-X9-PeT">
-                                        <rect key="frame" x="230" y="302" width="50" height="50"/>
-                                        <state key="normal" backgroundImage="twitter-4-xxl.png"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="ZE7-ov-hfk">
+                                        <rect key="frame" x="-5" y="358" width="324" height="165"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="rankingTableCell" id="1hc-k9-AXC">
+                                                <rect key="frame" x="0.0" y="28" width="324" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="1hc-k9-AXC" id="nF4-Nt-Kxz">
+                                                    <rect key="frame" x="0.0" y="0.0" width="324" height="44"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="3" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fwh-x7-zng">
+                                                            <rect key="frame" x="240" y="11" width="53" height="21"/>
+                                                            <fontDescription key="fontDescription" name="mplus-1mn-regular" family="M+ 1mn" pointSize="17"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ranking" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Q8-Tc-icI">
+                                                            <rect key="frame" x="24" y="11" width="52" height="21"/>
+                                                            <fontDescription key="fontDescription" name="mplus-1mn-regular" family="M+ 1mn" pointSize="17"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="no data" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QFT-ST-daf">
+                                                            <rect key="frame" x="109" y="11" width="117" height="21"/>
+                                                            <fontDescription key="fontDescription" name="mplus-1mn-regular" family="M+ 1mn" pointSize="17"/>
+                                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qev-uX-aWc">
+                                        <rect key="frame" x="44" y="219" width="75" height="75"/>
+                                        <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="26"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNu-6p-Zmy">
+                                        <rect key="frame" x="24" y="292" width="23" height="23"/>
                                         <connections>
-                                            <action selector="postTwitter:" destination="x4T-9C-ctQ" eventType="touchUpInside" id="e01-N2-vrs"/>
+                                            <action selector="postFacebook:" destination="x4T-9C-ctQ" eventType="touchUpInside" id="GVF-RY-58x"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xuF-Ux-aRi">
-                                        <rect key="frame" x="120" y="268" width="84" height="84"/>
-                                        <state key="normal" backgroundImage="home-5-xxl.png"/>
+                                        <rect key="frame" x="0.0" y="524" width="319" height="42"/>
                                         <connections>
                                             <action selector="toHome:" destination="x4T-9C-ctQ" eventType="touchUpInside" id="3sB-FK-57G"/>
                                         </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="af2-iU-iZs">
-                                        <rect key="frame" x="24" y="200" width="277" height="21"/>
+                                        <rect key="frame" x="3" y="74" width="308" height="41"/>
                                         <fontDescription key="fontDescription" name="mplus-1mn-regular" family="M+ 1mn" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qev-uX-aWc">
-                                        <rect key="frame" x="71" y="96" width="183" height="21"/>
-                                        <fontDescription key="fontDescription" name="mplus-1mn-regular" family="M+ 1mn" pointSize="17"/>
-                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNu-6p-Zmy">
-                                        <rect key="frame" x="44" y="302" width="50" height="50"/>
-                                        <state key="normal" backgroundImage="facebook-4-xxl.png"/>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="eyD-GY-Ykk">
+                                        <rect key="frame" x="162" y="163" width="151" height="141"/>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQX-X9-PeT">
+                                        <rect key="frame" x="62" y="293" width="22" height="22"/>
                                         <connections>
-                                            <action selector="postFacebook:" destination="x4T-9C-ctQ" eventType="touchUpInside" id="GVF-RY-58x"/>
+                                            <action selector="postTwitter:" destination="x4T-9C-ctQ" eventType="touchUpInside" id="e01-N2-vrs"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -328,6 +284,8 @@
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
                         <outlet property="answerLabel" destination="af2-iU-iZs" id="fTR-3Y-T31"/>
+                        <outlet property="area" destination="eyD-GY-Ykk" id="jpm-B1-Y8N"/>
+                        <outlet property="rankingTableView" destination="ZE7-ov-hfk" id="mHh-46-Uid"/>
                         <outlet property="scoreLabel" destination="Qev-uX-aWc" id="PkZ-qY-I28"/>
                     </connections>
                 </viewController>
@@ -337,15 +295,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="YUKA2.png" width="1789" height="3576"/>
-        <image name="YUKA3.png" width="3449" height="3550"/>
-        <image name="background.png" width="640" height="1136"/>
-        <image name="comment1.png" width="1024" height="1024"/>
-        <image name="facebook-4-xxl.png" width="256" height="256"/>
-        <image name="home-5-xxl.png" width="256" height="256"/>
-        <image name="kokuban.png" width="735" height="525"/>
-        <image name="point.png" width="1024" height="1024"/>
-        <image name="teacher_man.png" width="587" height="800"/>
-        <image name="twitter-4-xxl.png" width="256" height="256"/>
+        <image name="QuizViewController.png" width="750" height="1335"/>
+        <image name="ResultViewController.png" width="750" height="1335"/>
+        <image name="ViewController.png" width="750" height="1335"/>
     </resources>
 </document>
