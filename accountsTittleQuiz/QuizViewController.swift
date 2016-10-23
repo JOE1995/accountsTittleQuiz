@@ -24,6 +24,10 @@ class QuizViewController: UIViewController {
     
     var hasBeenTheBestScore:Int = 0
     
+    var isHighScore:Bool = false
+    
+    var toPosition:CGPoint!
+    
   
     @IBOutlet var label:LTMorphingLabel!
     @IBOutlet var choice1:UIButton!
@@ -35,6 +39,9 @@ class QuizViewController: UIViewController {
     @IBOutlet var choice7:UIButton!
     
     @IBOutlet var test:UIView!
+    
+    //quizCardViewの作成
+//    let quizCardView:UIView! = UIView()
     
     
     override func viewDidLoad() {
@@ -83,6 +90,13 @@ class QuizViewController: UIViewController {
         }
 
         print("\(numberOfQuiz)問目")
+        
+        //quizCardViewの作成
+//        quizCardView.frame.size = CGSize(width: 200,height: 50) //大きさの指定
+//        quizCardView.center = view.center
+//        quizCardView.backgroundColor = UIColor.whiteColor()
+//        view.addSubview(quizCardView)
+
     }
 
     override func didReceiveMemoryWarning() {
@@ -116,6 +130,7 @@ class QuizViewController: UIViewController {
         
         label.morphingEffect = .Scale
         label.text = presentArray[0]
+        
 //        choice1.setTitle(choices[0], forState: .Normal)
 //        choice2.setTitle(choices[1], forState: .Normal)
 //        choice3.setTitle(choices[2], forState: .Normal)
@@ -134,6 +149,8 @@ class QuizViewController: UIViewController {
     
     @IBAction func choiceAnswer(sender:UIButton){
         
+        toPosition = sender.center
+        
         choice1.enabled = false
         choice2.enabled = false
         choice3.enabled = false
@@ -142,7 +159,7 @@ class QuizViewController: UIViewController {
         choice6.enabled = false
         choice7.enabled = false
         
-        let delay = 0.1 * Double(NSEC_PER_SEC)
+        let delay = 1.2 * Double(NSEC_PER_SEC)
         let time  = dispatch_time(DISPATCH_TIME_NOW, Int64(delay))
         dispatch_after(time, dispatch_get_main_queue(), {
             self.choice1.enabled = true
@@ -162,7 +179,26 @@ class QuizViewController: UIViewController {
             if correctAnswer >= quizArrray.count{
                 performSegueToResult()
             }
-            showQuiz()
+            
+            
+            
+            //アニメーション
+            UIView.animateWithDuration(
+                1, // アニメーションの時間(秒)
+                animations: {() -> Void  in
+                    // アニメーションする処理
+                    self.label.center = self.toPosition
+                    self.label.alpha = 0
+                    self.label.transform = CGAffineTransformMakeScale(0.2, 0.2)
+                }, completion: {(Bool) -> Void in
+                    self.label.transform = CGAffineTransformMakeScale(1, 1)
+                    self.label.frame = CGRectMake(58, 254, 210, 50)
+                    self.label.alpha = 1
+                    self.showQuiz()
+
+            })
+            
+      
             
         } else {
             
@@ -199,6 +235,8 @@ class QuizViewController: UIViewController {
             let resultView = segue.destinationViewController as! ResultViewController
             resultView.correctAnswer = self.correctAnswer
             resultView.presentArray = self.presentArray
+            resultView.isHighScore = self.isHighScore
+            
         
         }
     }
@@ -218,6 +256,7 @@ class QuizViewController: UIViewController {
         if hasBeenTheBestScore < correctAnswer*10 {
         
         updateScore()
+        isHighScore = true
           
         /*
         保存ではなくて、更新を使うので一旦コメントアウト。getScoreメソッドで使う。

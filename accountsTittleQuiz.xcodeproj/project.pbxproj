@@ -45,6 +45,7 @@
 		C0886E5A1D9BD3CE00F0DBDA /* QuizViewController.png in Resources */ = {isa = PBXBuildFile; fileRef = C0886E581D9BD3CE00F0DBDA /* QuizViewController.png */; };
 		C0886E5C1D9BD5CB00F0DBDA /* ViewController.png in Resources */ = {isa = PBXBuildFile; fileRef = C0886E5B1D9BD5CB00F0DBDA /* ViewController.png */; };
 		C09AA6C71D983E2000F1DE65 /* comment1.png in Resources */ = {isa = PBXBuildFile; fileRef = C09AA6C61D983E2000F1DE65 /* comment1.png */; };
+		C0A68A671D9E582800B7665D /* High.png in Resources */ = {isa = PBXBuildFile; fileRef = C0A68A661D9E582800B7665D /* High.png */; };
 		C0E48F601D96B03400D19B6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E48F5F1D96B03400D19B6B /* AppDelegate.swift */; };
 		C0E48F621D96B03400D19B6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0E48F611D96B03400D19B6B /* ViewController.swift */; };
 		C0E48F651D96B03400D19B6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C0E48F631D96B03400D19B6B /* Main.storyboard */; };
@@ -121,6 +122,7 @@
 		C0886E581D9BD3CE00F0DBDA /* QuizViewController.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = QuizViewController.png; sourceTree = "<group>"; };
 		C0886E5B1D9BD5CB00F0DBDA /* ViewController.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ViewController.png; sourceTree = "<group>"; };
 		C09AA6C61D983E2000F1DE65 /* comment1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = comment1.png; sourceTree = "<group>"; };
+		C0A68A661D9E582800B7665D /* High.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = High.png; sourceTree = "<group>"; };
 		C0BD94C61D977AA10038532E /* mplus-1mn-regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "mplus-1mn-regular.ttf"; sourceTree = "<group>"; };
 		C0E48F5C1D96B03400D19B6B /* accountsTittleQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = accountsTittleQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C0E48F5F1D96B03400D19B6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -261,6 +263,7 @@
 				C0886E5B1D9BD5CB00F0DBDA /* ViewController.png */,
 				C0886E571D9BD3CE00F0DBDA /* ResultViewController.png */,
 				C0886E581D9BD3CE00F0DBDA /* QuizViewController.png */,
+				C0A68A661D9E582800B7665D /* High.png */,
 				C0E48F631D96B03400D19B6B /* Main.storyboard */,
 				C028E28F1D97B8C900525000 /* 3.5inch.storyboard */,
 				C0E48F661D96B03400D19B6B /* Assets.xcassets */,
@@ -391,6 +394,7 @@
 				TargetAttributes = {
 					C0E48F5B1D96B03400D19B6B = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = KJ2THWHM25;
 					};
 					C0E48F6F1D96B03400D19B6B = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -448,6 +452,7 @@
 				C078D7271D97701A008BF657 /* home-5-xxl.png in Resources */,
 				C028E2B31D97FB8C00525000 /* Icon-App-20x20@2x.png in Resources */,
 				C09AA6C71D983E2000F1DE65 /* comment1.png in Resources */,
+				C0A68A671D9E582800B7665D /* High.png in Resources */,
 				C028E28B1D97B26A00525000 /* Default-667h@2x.png in Resources */,
 				C028E2B91D97FB8C00525000 /* Icon-App-40x40@2x.png in Resources */,
 				C078D7211D970290008BF657 /* kokuban.png in Resources */,
@@ -756,10 +761,14 @@
 			baseConfigurationReference = E224FAFE435913D063884359 /* Pods-accountsTittleQuiz.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = accountsTittleQuiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YumaYabuki.accountsTittleQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -768,10 +777,14 @@
 			baseConfigurationReference = 878F9D48904325EDE3D90CE0 /* Pods-accountsTittleQuiz.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = accountsTittleQuiz/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = YumaYabuki.accountsTittleQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

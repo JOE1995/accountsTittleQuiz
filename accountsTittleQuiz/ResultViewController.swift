@@ -22,6 +22,9 @@ class ResultViewController: UIViewController, UITableViewDataSource, UITableView
     @IBOutlet var scoreLabel:UILabel!
     @IBOutlet var answerLabel:UILabel!
     @IBOutlet var area:UIView!
+    @IBOutlet var highScoreLabel:UIImageView!
+    
+    var isHighScore:Bool!
     
     //0~100
     var g:CGFloat = 0
@@ -49,6 +52,11 @@ class ResultViewController: UIViewController, UITableViewDataSource, UITableView
         super.viewDidLoad()
 
     
+        highScoreLabel.hidden = true
+        if isHighScore == true{
+            highScoreLabel.hidden = false
+        }
+        
         //test.backgroundColor = UIColor.cloudsColor()
         scoreLabel.text = String(correctAnswer*10)
         let number = Int(presentArray[1])!-1

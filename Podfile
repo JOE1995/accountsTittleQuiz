@@ -7,7 +7,7 @@ target 'accountsTittleQuiz' do
 pod 'LTMorphingLabel', '~> 0.0.3'
    # Pods for accountsTittleQuiz
 pod 'NCMB', :git => 'https://github.com/NIFTYCloud-mbaas/ncmb_ios.git'
-
+pod 'Google-Mobile-Ads-SDK', '~> 7.0'
   target 'accountsTittleQuizTests' do
     inherit! :search_paths
     # Pods for testing

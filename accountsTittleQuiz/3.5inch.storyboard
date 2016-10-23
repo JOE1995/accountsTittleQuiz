@@ -9,13 +9,14 @@
             <string>mplus-1mn-regular</string>
             <string>mplus-1mn-regular</string>
             <string>mplus-1mn-regular</string>
+            <string>mplus-1mn-regular</string>
         </mutableArray>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Sign Up View Controller-->
         <scene sceneID="zrN-Zw-tlb">
             <objects>
-                <viewController id="4D6-qd-1wD" customClass="ViewController" customModule="accountsTittleQuiz" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="4D6-qd-1wD" customClass="SignUpViewController" customModule="accountsTittleQuiz" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="nOO-Kq-mOj"/>
                         <viewControllerLayoutGuide type="bottom" id="pIL-NI-VUi"/>
@@ -29,18 +30,39 @@
                                 <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="26"/>
                                 <state key="normal" title="START"/>
                                 <connections>
+                                    <action selector="signUpBtn:" destination="4D6-qd-1wD" eventType="touchUpInside" id="gCG-r6-AVk"/>
                                     <segue destination="We3-1o-N7v" kind="modal" identifier="toQuiz" id="tYk-og-iw4"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="error" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZN6-fe-thp">
+                                <rect key="frame" x="5" y="143" width="311" height="21"/>
+                                <fontDescription key="fontDescription" name="mplus-1mn-regular" family="M+ 1mn" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pOG-xt-P8U">
+                                <rect key="frame" x="95" y="84" width="131" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <gestureRecognizers/>
+                        <connections>
+                            <outletCollection property="gestureRecognizers" destination="6ef-fn-4wX" appends="YES" id="8VQ-Cl-sZ3"/>
+                        </connections>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics"/>
                     <connections>
-                        <outlet property="startButton" destination="wNP-Lg-hBO" id="YDK-as-h5N"/>
+                        <outlet property="errorLabel" destination="ZN6-fe-thp" id="J2E-qz-hzg"/>
+                        <outlet property="userNameTextField" destination="pOG-xt-P8U" id="RlK-oh-aLA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5zJ-c3-wbG" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="6ef-fn-4wX">
+                    <connections>
+                        <action selector="tapScreen:" destination="4D6-qd-1wD" id="7vu-rp-eal"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="-197" y="286"/>
         </scene>
